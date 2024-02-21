@@ -1,0 +1,50 @@
+// javascript is a single threaded , synchronous dynamically typed, language
+// single threaded because it has single call stack and is executed line by line
+// dynamically means the we can change it at the run time
+
+let a = 10;
+console.log(typeof(a));
+
+a = "suraj";
+console.log(typeof(a)); //we can change at run time
+
+// node.js is a runtime environment
+
+// var let and const are all hoisted but (let, const) are in (temporal dead zone)
+
+// primitive and non primitive
+
+
+// Promise: is a object that has three state (fullfilled rejected pending)
+
+// async / await is a method to resolve promises
+
+
+
+// how can we acheive asynchronous in js?
+// using callbacks,promise, and async / await
+
+
+
+//shallow copy
+let obj = {
+    name:"suraj",
+    city:"bangalore"
+}
+
+// var copyObj = obj;
+// copyObj.name = "sanjeev"
+// console.log(obj);
+// console.log(copyObj);
+
+
+var deepCopy = JSON.parse(JSON.stringify(obj));
+
+deepCopy.name = "sanjeev";
+console.log(obj);
+console.log(deepCopy);
+
+
+
+// a fucntion passed as an argument  to another function is called a callback function;
+

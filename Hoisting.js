@@ -18,5 +18,13 @@ function getName (){
 // 5. variable declarations are scanned and are made undefined
 // 6. function declarations are scanned and are made available
 
-var x= 7;
 
+var x = 7;
+
+// when ever we run a program a[global execution context] is created and a [global object] (window) is created 
+// it allocates memory to all the variables and functions even before a single line is executed
+// at global level [this] is pointing to [window] object.
+
+// UNDEFINED AND NOT DEFINED
+// undefined means memory has been allocated to that varible but tht variable is not initialized
+// not defined means memory has not been allocated to that variable
